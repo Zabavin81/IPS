@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Pilowlava';
+    src: url('./fonts/Pilowlava-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo {
+    font-family: 'Pilowlava', sans-serif;
+    background: #f7f7f7;
+    padding: 40px;
+    font-size: 32px;
+    color: #FF8FB3;
+    weight: 400;
+}
