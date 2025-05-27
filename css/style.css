@@ -1,15 +1,173 @@
 @font-face {
     font-family: 'Pilowlava';
-    src: url('./fonts/Pilowlava-Regular.otf') format('opentype');
+    src: url('../fonts/Pilowlava-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 143, 179, 0.2);
+    height: 98px;
+
+}
+
 .logo {
     font-family: 'Pilowlava', sans-serif;
-    background: #f7f7f7;
-    padding: 40px;
     font-size: 32px;
     color: #FF8FB3;
-    weight: 400;
+    font-weight: 400;
+    margin-left: 256px;
 }
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    gap: 8px;
+    flex: 1;
+    height: 52px;
+    max-width: 447px;
+    margin-left: 72px;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+}
+
+.btn-enter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    width: 225px;
+    height: 52px;
+
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 10px;
+
+    color: #FF8FB3;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+    white-space: nowrap;
+    padding: 0;
+}
+.btn-cart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        width: 52px;
+        height: 52px;
+
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 10px;
+
+        white-space: nowrap;
+        padding: 0;
+    }
+
+.icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.btn .icon {
+    margin-right: 6px;
+}
+
+.search .icon {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.footer {
+    padding-top: 24px;
+    box-shadow: 0 0 5px rgba(255, 143, 179, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+
+    display: flex;
+    gap: 21px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: bold;
+    width: 216px;
+    height: 16px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+
+.footer-column li {
+    width: 216px;
+    height: 39px;
+    font-size: 14px;
+    color: #222;
+    text-align: left;
+}
+
+.footer-column a {
+    color: #222;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    margin-left: 12px;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
+}
+
