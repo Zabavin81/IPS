@@ -45,8 +45,8 @@
     </div>
     <h2>В стаканчике</h2>
     <section class="catalog">
-        <div class="card">
-            <img src="img/firm.png" alt="Фирменное" class="card-img">
+        <div class="card" onclick="openPopup('popup-firm')">
+            <img src="img/firmSmall.png" alt="Фирменное" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -62,7 +62,7 @@
         </div>
 
         <div class="card">
-            <img src="img/chocolate.png" alt="Фирменное" class="card-img">
+            <img src="img/chocolateSmall.png" alt="Фирменное" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="img/strawberry.png" alt="Клубничное" class="card-img">
+            <img src="img/strawberrySmall.png" alt="Клубничное" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="img/fist.png" alt="Фисташковое" class="card-img">
+            <img src="img/fistSmall.png" alt="Фисташковое" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -107,7 +107,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="img/caramel.png" alt="Карамельное" class="card-img">
+            <img src="img/caramelSmall.png" alt="Карамельное" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -122,7 +122,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="img/melon.png" alt="Дынное" class="card-img">
+            <img src="img/melonSmall.png" alt="Дынное" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -141,7 +141,7 @@
     <h2>В креманке</h2>
     <section class="catalog">
         <div class="card">
-            <img src="img/firm.png" alt="Фирменное" class="card-img">
+            <img src="img/firmSmall.png" alt="Фирменное" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -157,7 +157,7 @@
         </div>
 
         <div class="card">
-            <img src="img/chocolate.png" alt="Фирменное" class="card-img">
+            <img src="img/chocolateSmall.png" alt="Фирменное" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -172,7 +172,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="img/strawberry.png" alt="Клубничное" class="card-img">
+            <img src="img/strawberrySmall.png" alt="Клубничное" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -187,7 +187,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="img/fist.png" alt="Фисташковое" class="card-img">
+            <img src="img/fistSmall.png" alt="Фисташковое" class="card-img">
 
             <div class="card-bottom">
                 <div class="description">
@@ -376,6 +376,59 @@
         </div>
     </div>
 </footer>
+<div class="popup-overlay" id="popup-firm">
+    <div class="popup">
+        <span class="close-btn" onclick="closePopup('popup-firm')">&times;</span>
+        <div class="popup-content">
+            <img src="img/firmSmall.png" alt="Фирменное" class="popup-img">
+            <div class="popup-details">
+                <div class="popup-header">
+                    <h3>Фирменное</h3>
+                    <span class="popup-price">300 ₽</span>
+                </div>
+                <p class="popup-desc">Молоко, сливки, сахар</p>
+
+                <div class="popup-options">
+                    <div class="popup-option-group">
+                        <input type="radio" class="popup-radio" name="weight" id="80g" checked>
+                        <label for="80g">80г</label>
+
+                        <input type="radio" class="popup-radio" name="weight" id="300g">
+                        <label for="300g">300г</label>
+                    </div>
+
+                    <div class="popup-option-group">
+                        <input type="radio" class="popup-radio" name="type" id="В рожке"checked>
+                        <label for="В рожке">В рожке</label>
+
+                        <input type="radio" class="popup-radio" name="type" id="В креманке">
+                        <label for="В креманке">В креманке</label>
+                    </div>
+                </div>
+
+
+                <div class="popup-kbju">
+                    <p><strong>КБЖУ</strong></p>
+                    <p>Ккал: 85 ккал</p>
+                    <p>Белки: 1г</p>
+                    <p>Жиры: 3г</p>
+                    <p>Углеводы: 11г</p>
+                </div>
+
+                <button class="popup-cart-btn">В корзину</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function openPopup(id) {
+        document.getElementById(id).style.display = 'flex';
+    }
+
+    function closePopup(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+</script>
 
 </body>
 </html>
