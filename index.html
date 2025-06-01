@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Ice cream</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 <header class="header">
-    <div class="logo">SNOO</div>
+    <a href="index.html" class="logo">SNOO</a>
 
     <div class="header-controls">
         <div class="search">
@@ -356,7 +358,7 @@
             <div class="footer-column">
                 <h4>Для вас</h4>
                 <ul class = "footer-list">
-                    <li><a href="#">О нас</a></li>
+                    <li><a href="about_us.html">О нас</a></li>
                     <li><a href="#">Отзывы</a></li>
                 </ul>
             </div>
@@ -380,11 +382,14 @@
     <div class="popup">
         <span class="close-btn" onclick="closePopup('popup-firm')">&times;</span>
         <div class="popup-content">
-            <img src="img/firmSmall.png" alt="Фирменное" class="popup-img">
+            <div class="popup-details">
+            <img src="img/firmCard.png" alt="Фирменное" class="popup-img">
+                <button class="popup-cart-btn">В корзину</button>
+            </div>
             <div class="popup-details">
                 <div class="popup-header">
                     <h3>Фирменное</h3>
-                    <span class="popup-price">300 ₽</span>
+                    <div class="popup-price">300 ₽</div>
                 </div>
                 <p class="popup-desc">Молоко, сливки, сахар</p>
 
@@ -404,18 +409,16 @@
                         <input type="radio" class="popup-radio" name="type" id="В креманке">
                         <label for="В креманке">В креманке</label>
                     </div>
+                    <div class="popup-kbju">
+                        <p><strong>КБЖУ</strong></p>
+                        <p>Ккал: 85 ккал</p>
+                        <p>Белки: 1г</p>
+                        <p>Жиры: 3г</p>
+                        <p>Углеводы: 11г</p>
+                    </div>
                 </div>
 
 
-                <div class="popup-kbju">
-                    <p><strong>КБЖУ</strong></p>
-                    <p>Ккал: 85 ккал</p>
-                    <p>Белки: 1г</p>
-                    <p>Жиры: 3г</p>
-                    <p>Углеводы: 11г</p>
-                </div>
-
-                <button class="popup-cart-btn">В корзину</button>
             </div>
         </div>
     </div>
